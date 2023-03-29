@@ -1,0 +1,205 @@
+<%- include("partials/header1"); -%>
+<!-- navbar ends  -->
+
+<!-- home section  -->
+
+<section class="home">
+
+    <div class="homeheading">
+<h1 class="headinghome">BIZ<span class="hhomeanimate">MIND</span></h1>
+<div class="subtext">
+    <h3 class="hsubheading">Believe</h3>
+    <div class="lowersub">
+        <h3 class="subhome">Think</h3>
+        <h3 class="">Create</h3>
+    </div>
+    <div class="kmorediv">    <a href="#aboutus" class="kmore">Know more         <img src="https://media.giphy.com/media/VfrLCmybNyDcVc5lfU/giphy.gif" alt="kmoreimg" class="kmoreimg">
+    </a>
+    </div>
+</div>
+
+
+    </div>
+    <!-- <h1 class="heading">BIZMIND<br>Think belive create</h1> -->
+
+    <div class="homewrapper">
+
+
+
+        <div class="container">
+
+            <div class="slider slider1">
+                <%for(var j=1;j<6;j++){ %>
+                <div class="child-container">
+                    <img src="../images/events/img<%=i %>.jpeg" alt="pic 1">
+                </div>
+                <%} %>
+               
+                <% for(var i=6;i<9;i++){ %>
+                    <div class="child-container">
+                        <img src="/images/gal/galimg<%=i %>.jpg" alt="pic 7">
+                    </div>
+                    <%} %>
+                <% for(var i=1;i<9;i++){ %>
+                <div class="child-container">
+                    <img src="/images/gal/galimg<%=i %>.jpg" alt="pic 7">
+                </div>
+                <%} %>
+                <% for(var i=1;i<9;i++){ %>
+                    <div class="child-container">
+                        <img src="/images/gal/galimg<%=i %>.jpg" alt="pic 7">
+                    </div>
+                    <%} %>
+
+
+            </div>
+
+            <div class="slider slider2">
+                <%for(var j=1;j<6;j++){ %>
+                    <div class="child-container">
+                        <img src="../images/events/img<%=j %>.jpeg" alt="pic 1">
+                    </div>
+                    <%} %>
+                   
+                    <% for(var i=6;i<9;i++){ %>
+                        <div class="child-container">
+                            <img src="/images/gal/galimg<%=i %>.jpg" alt="pic 7">
+                        </div>
+                        <%} %>
+                    <% for(var i=1;i<9;i++){ %>
+                    <div class="child-container">
+                        <img src="/images/gal/galimg<%=i %>.jpg" alt="pic 7">
+                    </div>
+                    <%} %>
+                    <% for(var i=1;i<9;i++){ %>
+                        <div class="child-container">
+                            <img src="/images/gal/galimg<%=i %>.jpg" alt="pic 7">
+                        </div>
+                        <%} %>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+</section>
+
+<!-- about us part  -->
+<section class="aboutus" id="aboutus">
+<div class="container-fluid">
+    <div class="row">
+        <div class="mx-auto col-md-8 abtcon">
+            <div class="container abtcontent  hidden"  id="about" >
+                <h2 class="pageheading">About Bizmind</h2>
+                <p>Bizmind, the entrepreneurial cell of maims was established in 2019. it aims to encourage the youth to embrace their inner entrepreneur. it gives wings to creativity by putting students from diverse backgrounds together. the team encompasses students from all departments, such as commerce, business administration, law, and even technology. it provides various opportunities for the members to gain exposure and develop their personalities and shape their intellects</p>
+              
+              </div>
+
+        </div>
+
+        <div class="mx-auto col-md-4 abtimg ">
+
+            <div class="introimg hidden1">
+                <img src="images/thinkeye.png" alt="thinkimg" class="thinkimg">
+    
+                <div class="eyes">
+                  <img src="images/eye.png" alt="" class="eye lefteye">
+                  <img src="images/eye.png" alt="" class="eye righteye">
+    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- departments cards start  -->
+<%- include("partials/dept"); -%>
+
+<!-- dept card ends  -->
+
+<!-- event part starts  -->
+
+<%- include("partials/events"); -%>
+
+<!-- sponsors part  -->
+<%- include("partials/sponsor"); -%>
+
+<!-- collabss part  -->
+<%- include("partials/collabs"); -%>
+
+<!-- gallery part  -->
+<%- include("partials/gallery1"); -%>
+<!-- social media icons part  -->
+
+<%- include("partials/social"); -%>
+
+<!-- social part ends  -->
+
+<%- include("partials/contact"); -%>
+
+
+<section class="websec">
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/main1.js" type="text/javascript"></script>
+
+<!-- script for swiper cards  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    autoplay:{
+      delay:5000,
+      disableOnInteraction:true,
+    },
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    on: {
+    click() {
+        console.log('index', this.clickedIndex);
+        mySwiper.slideTo(this.clickedIndex);    
+    },
+  }
+  });
+
+</script>
+
+
+</body>
