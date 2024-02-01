@@ -30,10 +30,10 @@
 
             <div class="slider slider1">
                 <%for(var j=1;j<6;j++){ %>
-                <div class="child-container">
-                    <img src="../images/events/img<%=i %>.jpeg" alt="pic 1">
-                </div>
-                <%} %>
+                    <div class="child-container">
+                        <img src="../images/event-img/img<%=j %>.jpg" alt="pic 1">
+                    </div>
+                    <%} %>
                
                 <% for(var i=6;i<9;i++){ %>
                     <div class="child-container">
@@ -57,7 +57,7 @@
             <div class="slider slider2">
                 <%for(var j=1;j<6;j++){ %>
                     <div class="child-container">
-                        <img src="../images/events/img<%=j %>.jpeg" alt="pic 1">
+                        <img src="../images/event-img/img<%=j %>.jpg" alt="pic 1">
                     </div>
                     <%} %>
                    
@@ -142,19 +142,19 @@
 
 <!-- gallery part  -->
 <%- include("partials/gallery1"); -%>
+<%- include("partials/contact"); -%>
 <!-- social media icons part  -->
 
 <%- include("partials/social"); -%>
 
 <!-- social part ends  -->
 
-<%- include("partials/contact"); -%>
 
 
-<section class="websec">
+<!-- footer  -->
+<%- include("partials/footer"); -%>
 
 
-</section>
 
 
 

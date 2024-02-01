@@ -57,8 +57,8 @@ app.get("/",(req,res)=>{
 
 // callback for gallery router 
 
-app.get("/gallery",(req,res)=>{
-    res.render("gallery",{galimg:gal});
+app.get("/team",(req,res)=>{
+    res.render("team",{galimg:gal});
 })
 
 
